@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GuitarShop</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="img/LogoGuitar.ico">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!----------------Magnific popup css file---------------------->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    
+    <!----------------Owl carousel css file---------------------->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!----------------Magnific popup js file---------------------->
+    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    
+    <!----------------Owl carousel js file---------------------->
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/01912287bb.js" crossorigin="anonymous"></script>
+    
+    <!---- for on scroll animations / animate.css cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!---- Link and activate wow.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!---------Navigation starts---------->
+    <nav class="navbar navbar-inverse navbar-fixed-top"><!--dzięki navbar-inverse pasek nawigacyjny jest czarny-->
+        <!-- Klasa .navbar-fixed-top sprawia, że pasek nawigacji jest ustawiony na górze: -->
+        <div class="container"> <!--Klasa .container zapewnia responsywny kontener o stałej szerokości -->
+            <div class="navbar-header">
+                <!----------Responsive button------------->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--navbar-brand -> dla nazwy firmy, produktu lub projektu.-->
+                <span id="brand">
+                    <a href="index.html" class="navbar-brand"><img class="img-logo" src="img/LogoGuitar.png" alt="logo"></a>
+                </span>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navi"> <!--navi potrzebne do wpisania w data-target-->
+                <!----------Navigation menus------------->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#channel">Offers</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#teams">Team</a></li>
+                    <li><a href="#opinion">Opinion</a></li>
+                    <li><a href="#contact" class="location">Contact</a></li>
+                </ul>
+                <!----------Navigation menus end------------->
+            </div>
+        </div>
+    </nav>
+    <!---------Navigation Ends---------->
+ 
+        <!---------Slider section starts---------->
+        <section class="slider text-center" id="slider">
+            <div class="slider-overlay">
+                <div class="slider-content">
+                    <div class="icons">
+                        <i class="fab fa-apple"></i>
+                        <i class="fab fa-android"></i>
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <br>
+                    <div class="text"></div>
+                    <div class="small-text"><h4>Search for guitars and pay only for the ones you like.</h4></div>
+                    
+                    <br><br> 
+                    <div class="social-networks">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="" class="fab fa-twitter"></a>
+                        <a href="" class="fab fa-instagram"></a>
+                        <a href="" class="fab fa-youtube"></a>
+
+                    </div>
+                    <!--scroll-->
+                    <br>
+
+                    <img src="img/scroll.png" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+                </div>
+            </div>
+        </section>
+        <!---------Slider section ends---------->
+
+        <!---------Services Markups---------->
+        <br><br>
+        <section class="service-area" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <h2><b>SERVICES</b></h2>
+                            <p>
+                                Learn more about our work.
+                            </p>
+                        </div>
+                    </div>
+
+                </div><br><br>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center" id="service-wrap-one">
+                            <div class="service-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <h3>Guitar Quality</h3>
+                            <p style="height: 100px">
+                                We work with well-known companies that create the best quality guitars for us.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center" id="service-wrap-two">
+                                <div class="service-icon">
+                                    <i class="fa fa-guitar"></i>
+                                </div>
+                                <h3>Guitar Test</h3>
+                                <p style="height: 100px">
+                                    We help in choosing the best instrument at a convenient price. You can also check how our guitars play!                                    
+                                </p>
+                            </div>
+    
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-wrap text-center" id="service-wrap-three">
+                                <div class="service-icon">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h3>Marketing</h3>
+                                <p style="height: 100px">
+                                    Our marketing! Check how we operate on the market and how we look against the background of our competitors. Our company GuitarShop is constantly developing.                                    
+                                </p>
+                            </div>
+    
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!---------Services Markups Ends---------->
+
+        <!---------Youtube-Channel Starts---------->
+        <br><br><br><br><br>
+        <section class="youtube-channel" id="channel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 box-offers">
+                        <h4><b>We operate on the market with a passion for music</b></h4>
+
+                        <p><b>Guitar Shop</b> is an online store, <br>
+                            where you can buy good quality guitars and guitar accessories. <br>
+                            We are able to offer attractive prices.<br>
+                            If you want to check the guitar, take a look at us on <b>YouTube </b><i style="color: #c4302b"class="fab fa-youtube"></i>,<br>
+                            to hear th sound of a guitar, or visit our stationary store.
+                        </p>
+                        
+                        <br>
+
+                        <button class="btn-offers wow fadeInUp">
+                            <span>Offers</span>
+                        </button>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                            <h4><b>Listen to the guitar on our YouTube channel - Guitar Shop</b></h4>
+                            <br><br>
+                            <div class="box-img">
+                                <img  src="img/yt-channel.jpg" alt="yt-channel">
+
+                                <div class="triangle">
+                                    <h4><i class="fas fa-caret-right"></i></h4>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------Youtube-Channel Ends---------->
+
+
+        <!---------Works Markups Starts---------->
+
+        <section class="work" id="works"><br><br><br><br><br>
+            <div class="container"> <!--Klasa .container-fluid zapewnia pojemnik o pełnej szerokości, obejmujący całą szerokość rzutni-->
+                <div class="headers-guitars"><h4 style="text-align: center;"><b>Our guitars in professional photos.</b></h4></div>
+                <br><br>
+                <div class="row no-gutters">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/guitar1.jpg" title="electric guitar">
+                                <img src="img/guitar1.jpg" class="img-responsive" alt="1.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar2.jpg" title="acoustic guitar">
+                                        <img src="img/guitar2.jpg" class="img-responsive" alt="2.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar3.jpg" title="acoustic guitar">
+                                        <img src="img/guitar3.jpg" class="img-responsive" alt="3.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar4.jpg" title="electric guitar">
+                                        <img src="img/guitar4.jpg" class="img-responsive" alt="4.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/guitar5.jpg" title="acoustic guitar">
+                                <img src="img/guitar5.jpg" class="img-responsive" alt="5.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar6.jpg" title="Ukulele">
+                                        <img src="img/guitar6.jpg" class="img-responsive" alt="6.png">
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar7.jpg" title="acoustic guitar">
+                                        <img src="img/guitar7.jpg" class="img-responsive" alt="2.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="img-wrapper">
+                                    <a href="img/guitar8.jpg" title="electric guitar">
+                                        <img src="img/guitar8.jpg" class="img-responsive" alt="2.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>       
+
+        <!---------Works Markups Ends---------->
+
+        <!---------Team Markup---------->
+            <br><br><br>
+            <section class="teams" id="teams">
+                <div class="container text-center">
+                    <h2><b>TEAM</b></h2>
+                    <p>
+                        GuitarShop employees.
+                    </p>
+                </div><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel owl-theme">
+                                <div class="team-member">
+                                    <img src="img/team-1.jpg" class="img-responsive" alt="team-1">
+                                    <div class="team-member-info text-center">
+                                        <h4 class="team member name">Josephine</h4>
+                                        <h4 class="team-member-designation">photographer</h4>
+                                        <ul class="social-list">
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <img src="img/team-2.jpg" class="img-responsive" alt="team-2">
+                                    <div class="team-member-info text-center">
+                                        <h4 class="team member name">Paul</h4>
+                                        <h4 class="team-member-designation">shop-assistant</h4>
+                                        <ul class="social-list">
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <img src="img/team-3.jpg" class="img-responsive" alt="team-3">
+                                    <div class="team-member-info text-center">
+                                        <h4 class="team member name">Jhonson</h4>
+                                        <h4 class="team-member-designation">Manager</h4>
+                                        <ul class="social-list">
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <img src="img/team-4.jpg" class="img-responsive" alt="team-4">
+                                    <div class="team-member-info text-center">
+                                        <h4 class="team member name">Peter</h4>
+                                        <h4 class="team-member-designation">Web services</h4>
+                                        <ul class="social-list">
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <img src="img/team-5.jpg" class="img-responsive" alt="team-5">
+                                    <div class="team-member-info text-center">
+                                        <h4 class="team member name">Katie</h4>
+                                        <h4 class="team-member-designation">sales</h4>
+                                        <ul class="social-list">
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon icon-gray"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        <!---------Team Markup Ends---------->
+
+        <!---------Opinion clients starts------>
+        <br><br><br>
+        <section class="opinion-clients" id="opinion">
+            <div class="container text-center">
+                        <h4 class="heading-form">Our Clients and their opinions</h4>
+            </div><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="img/woman.png" alt="User testmonial picture">
+                                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Quo impedit quas natus iure quisquam maiores,
+                                        voluptate error neque ut quam!</div>
+                                    <figcaption>-Ashe Lilie</figcaption>
+                                </figure>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul> 
+                            <li>
+                                <figure>
+                                    <img src="img/man.png" alt="User testmonial picture">
+                                    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Quo impedit quas natus iure quisquam maiores,
+                                        voluptate error neque ut quam!</div>
+                                    <figcaption>-Bob Doe</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!---------Opinion clients ends-->
+
+        <!---------------- form section starts ------------------->
+        <section class="form" id="contact">
+
+            <div class="container">
+                <br><br>
+                    <div class="row">
+                        <div><h4 class="heading-form">CONTACT</h4></div>
+
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <form name="contact-form" id="contact-form" style="margin: auto;" 
+                            method="post" action="">
+                            
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-delay="1.4s">
+                                    <label for="contact-name">Name :</label>
+                                    <div class="textarea wow fadeInUp">
+                                        <input type="text" name="contact-name" id="contact-name"
+                                        value="" required>
+                                    </div>
+                                </li>
+        
+                                <li class="wow fadeInUp" data-wow-delay="1.6s">
+                                    <label for="contact-email">Email :</label>
+                                    <div class="textarea wow fadeInUp">
+                                        <input type="email" name="contact-email" id="contact-email"
+                                        value="" required>
+                                    </div>
+                                </li>
+        
+                                <li class="wow fadeInUp" data-wow-delay="1.8s">
+                                        <label for="contact-project">Message :</label>
+                                        <div class="textarea">
+                                            <textarea type="email" name="contact-project" id="contact-project"
+                                                rows="6" value="" required>
+                                            </textarea>
+                                        </div>
+                                </li>
+        
+                            </ul>
+                            
+                            <div class="contact-submit">
+                                <button type="submit" name="contact-submit" id="contact-submit"
+                                    class="btn-send wow fadeInUp">Send Message
+                                </button>
+                            </div>
+                            
+        
+                            </form>
+                        </div>
+                    </div>
+            </div>
+
+        </section>
+        <!---------------- form section ends ------------------->
+    
+        <div class="whitespace"></div>
+
+        <!---------------- footer starts ------------------->
+        <div class="footer">
+            <div class="container">
+                <br><br>
+                <div class="hr">
+                    <div class="row"></div>
+                </div>
+
+                <br>
+                <div class="collab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <i class="fas fa-share-alt-square"style="font-size:32px;color:red"></i>
+                            <p class="question wow fadeInUp">Visit my media.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <div class="info">
+                    <div class="row">
+                    
+                        <div class="col-lg-2" id="address">
+                                <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                                <h4 class="wow fadeInUp" data-wow-delay="0.2s">thepioter@gmail.com </h4>
+                                <br><br>
+                        </div>
+                        <div class="col-lg-2"></div>
+
+                        <div class="col-lg-8" id="media">
+                                <p class="wow fadeInUp">follow me</p>
+                                <ul>
+                                        <a target="_blank" title="fb" href="https://www.facebook.com/">
+                                            <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s"><i class="fab fa-facebook-f"></i></li>
+                                        </a>
+
+                                        <a target="_blank" title="GitHub" href="https://github.com/ThePioter18">
+                                            <li id="github" class="wow fadeInUp" data-wow-delay="0.6s"><i class="fab fa-github"></i></li>
+                                        </a>
+
+                                        <a target="_blank" title="Behance" href="https://www.behance.net/piotrekrucced7">
+                                            <li id="bh" class="wow fadeInUp" data-wow-delay="0.8s"><i class="fab fa-behance"></i></li>
+                                        </a>
+                                        
+                                        <a target="_blank" title="YT" href="https://www.youtube.com/">
+                                            <li id="yt" class="wow fadeInUp" data-wow-delay="1s"><i class="fab fa-youtube"></i></li>
+                                        </a>
+                                </ul>
+                                <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container-fluid"style="background-color: #333;">
+                    <div class="collab">
+                            <div class="row">
+                                <div class="col-lg-12"style="background-color: #000; height:10px; opacity:0.4;"></div>
+                                <div class="col-lg-12">
+                                    
+                                    <br><br>
+                                    <a href=""> <img style="margin: auto;" src="img/LogoGuitarWhite.png" class="img-responsive" alt="logoGuitarWhite"> </a>
+                                    <br><br>
+                                    <p>Melrose Place, 90210 <br>
+                                        Poland</p>
+
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <!---------------- footer ends ------------------->
+        
+    <!------ greensock cdn ------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" 
+    crossorigin="anonymous">
+    </script>
+
+    <!-- jquery ripple effect / ripples-min.js -->
+    <script src="js/jquery.ripples-min.js" type="text/javascript"></script>
+
+    <!-- typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+  
+    <!-- main.js -->
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

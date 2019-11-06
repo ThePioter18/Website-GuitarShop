@@ -1,0 +1,696 @@
+/*==========================
+    Basis Properties starts
+============================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*==========================
+    Navigations starts
+============================*/
+.navbar{
+    padding: 22px 0px;
+   /* background-color: #34495e !important; dzięki impertant navbar zmieni kolor*/ 
+    border-bottom: none !important; /*skasowanie bordera*/
+    transition: all 0.5s ease-in-out;
+}
+a.navbar-brand{
+    padding: 0px;
+    margin-top: -15px;
+}
+.img-logo{
+    width: 80%;
+    height: auto;
+}
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+}
+.navbar ul li a:hover{
+    color: deepskyblue !important;
+    background: none !important;
+}
+.navbar-toggle{
+    border: 1px solid white !important;
+    color: white !important;
+    transition: all 0.5s ease-in;
+}
+.icon-bar{
+    color: white !important;
+    background-color:white !important;
+}
+.navbar-toggle:hover{
+    background-color: deepskyblue !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: transparent !important;
+}
+.location{
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.navbar-inverse{
+    background-color: transparent !important;
+}
+
+/*==========================
+        Navigations Ends
+============================*/
+
+/*==========================
+Sticky Navigation with background color
+============================*/
+.secondary{
+    background-color: #34495e !important;
+}
+
+
+/*==========================
+        Slider starts
+============================*/
+.slider{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/guitarWoman.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    top:39%;
+    width: 100%; /*wyśrodkuje elementy*/
+}
+.icons .fab{
+    font-size: 35px;
+    margin-right: 7px;
+}
+
+.social-networks a.fab, a.fas{
+    border: 1px solid white;
+    padding-top: 5px;
+    color: white;
+    width: 55px;
+    height: 1px;
+    border-radius: 25px;
+    margin-right: 2px;
+    transition: all 0.5s ease-in;
+    font-size: 22px;
+}
+.social-networks a.fab:hover, a.fas:hover{
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: white;
+    border: 1px solid deepskyblue;
+}
+.slider .typed-cursor{
+    display: inline;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.text{
+    display: inline;
+    font-size: 50px;
+}
+.primary{
+    color: orangered
+}
+.typed-cursor{
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+}
+/* migajacy kursor */
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*scroll start*/
+
+.scroll {
+    width: 7%; /*wielkość*/
+    margin-top: 1em; /*ustawia nizej strzałkę*/
+    animation: move 1s infinite alternate;
+}
+/*animation scroll*/
+@keyframes move {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    } 
+}
+
+/*==========================
+        Slider Ends
+============================*/
+
+
+/*==========================
+        Services styles
+============================*/
+
+.service-area{
+    margin-top: 30px;
+}
+.service-area p{
+    margin-bottom: -5px;
+}
+
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+
+}
+/*===STARTS background-color service-wrap-one*/
+#service-wrap-one:hover:before{
+    left: -27px;
+    opacity: 1;
+    background: #08744a;
+}
+#service-wrap-one::after{
+    right: 100%;
+    bottom: -37px;
+    background: #08744a;
+
+}
+#service-wrap-one:hover:after{
+    right: -27px;
+    opacity: 1;
+}
+/*===END background-color service-wrap-one*/
+
+/*===TWO STARTS background-color service-wrap-two*/
+#service-wrap-two:hover:before{
+    left: -27px;
+    opacity: 1;
+    background: #9c2e34;
+}
+#service-wrap-two::after{
+    right: 100%;
+    bottom: -37px;
+    background: #9c2e34;
+
+}
+#service-wrap-two:hover:after{
+    right: -27px;
+    opacity: 1;
+}
+/*===TWO END background-color service-wrap-two*/
+
+/*===THREE STARTS background-color service-wrap-two*/
+#service-wrap-three:hover:before{
+    left: -27px;
+    opacity: 1;
+    background: #4481c7;
+}
+#service-wrap-three::after{
+    right: 100%;
+    bottom: -37px;
+    background: #4481c7;
+
+}
+#service-wrap-three:hover:after{
+    right: -27px;
+    opacity: 1;
+}
+/*===THREE END background-color service-wrap-two*/
+
+.service-wrap:hover{
+    color: white;
+}
+.service-wrap:h3{
+    color: white;
+}
+.service-wrap:hover h3{
+    color: white;
+}
+.service-wrap:hover h3:after{
+    background-color: white;
+}
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.service-wrap:hover .service-icon i{
+    transform:rotate(360deg);
+}
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+/*==========================
+    Services styles end
+============================*/
+
+/*++++++++++++++++++++++++++++++++
+    YouTube Channel styles starts
+++++++++++++++++++++++++++++++++++*/
+/* .btn-offers {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bolder;
+    color:aliceblue;
+    background-color: blueviolet;
+    border-radius: 28px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+.btn-offers:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.send:active{
+    color: rgba(255,255,255,0.5);
+    background-color: rgb(25, 180, 118);  
+} */
+.box-offers {
+    margin-top: 10%;
+    padding-left: 5%; 
+}
+.youtube-channel h4 {
+    margin-bottom: 5%;
+}
+.youtube-channel p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.box-img {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
+.triangle {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+.triangle h4 {
+    color: white; 
+    font-size: 62px; 
+    opacity: 0.4;
+}
+.triangle h4:hover{
+    opacity: 0.8;
+}
+
+/*++++++++++++++++++++++++++++++
+    YouTube Channel styles end
+++++++++++++++++++++++++++++++++*/
+
+/*==========================
+    Work styles
+============================*/
+.work{
+    margin-top: 25px;
+}
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+
+}
+/*==========================
+    Work styles ends
+============================*/
+
+/*==========================
+        Team styles
+============================*/
+.team-member{
+    margin: 0 25px;
+}
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+h4.team-member-name{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+h4.team-member-designation{
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+.social-list{
+    padding-left: 0;
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-list i{
+    font-size: 17px;
+
+}
+.icon-gray i{
+    color:#64707b;
+}
+
+/*prev button & next button*/
+.owl-nav .owl-prev span{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.owl-nav .owl-prev span:hover{
+    color: #34c6d3;
+}
+.owl-nav .owl-next span{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.owl-nav .owl-next span:hover{
+    color: #34c6d3;
+}
+
+
+.whitespace{
+    width: 100%;
+    height: 100px;
+}
+/*===========================
+    Opinion clients style starts 
+=============================*/
+
+.opinion-clients {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.opinion-clients ul li:first-child {
+    margin-bottom: 2em;
+}
+.opinion-clients ul li {
+    list-style-type: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+.desc {
+    width: 50%;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 17.5px;
+    border-left: 5px solid #f4dd84;
+}
+figcaption {
+    margin-top: 4%;
+    font-weight: bold;
+    font-size: 15px;
+    color: #00C2FF;
+}
+/*===========================
+    Opinion clients style ends 
+=============================*/
+
+/*=======================
+    contact form 
+=========================*/
+.heading-form {
+    color: rgb(82, 82, 82);
+    font-weight: bolder;
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+#contact-form ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+#contact-form li {
+    padding: 10px;
+}
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+#contact-form label {
+    display: block;
+    font-size: 1em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: rgb(82, 82, 82);
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+.contact-submit{
+    text-align: center;
+}
+.btn-send, .btn-offers {
+    text-transform: uppercase;
+    padding: 15px 15px;
+    background: transparent;
+    color: #999;
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-send:hover, .btn-offers:hover{
+    background: #2EE59D;
+    color: #fff;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+}
+.btn-send:active, .btn-offers:active{
+    color: rgba(255,255,255,0.5);
+    background-color: rgb(25, 180, 118);  
+}
+
+
+/*=======================
+    contact form end 
+=========================*/
+
+/*=======================
+    footer style starts 
+=========================*/
+.hr {
+    border: 2px dotted rgba(12, 12, 12, 0.2);
+}
+.collab {
+    text-align: center;
+}
+
+.collab p {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 60px;
+}
+.info h4 {
+    font-size: 18px;
+    color: rgb(82, 82, 82);
+    margin-top: 16px;
+}
+.info p {
+    color: grey;
+    font-size: 17px;
+}
+
+#fb {
+    font-size: 22px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+#github{
+    font-size: 22px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+#bh{
+    font-size: 22px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+#yt{
+    font-size: 22px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+#media {
+    text-align: right;
+}
+#media ul {
+    list-style: none;
+}
+#media ul a {
+    text-decoration: none;
+}
+#media ul li {
+    display: inline-block;
+}
+/*=======================
+    footer style ends
+=========================*/
+
+/*==========
+    @Media
+============*/
+
+@media(max-width: 768px){
+   
+    .text{
+        font-size: 35px;
+    }
+    /*hide scroll down*/
+    .hide-mobile{
+        display: none;
+    }
+    #contact-form {
+        margin: 5% -8%;
+        width: 98%;
+    }
+    /*wyśrodkowanie oferty z przyciskiem*/
+    .box-offers {
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    .collab, #personal, #media, #address {
+        text-align: center;
+    }
+    .info ul {
+        margin: 0 0 0 -22px;
+        padding: 0;
+    }
+}
