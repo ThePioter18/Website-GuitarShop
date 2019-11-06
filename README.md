@@ -1,12 +1,12 @@
 # Website-GuitarShop
-Responsive website Guitar Shop. Used technologies: html, css, javascript.
+Responsive website Guitar Shop. Used technologies: html, css, javascript.<br /><br />
 
-I used tools: 
-jquery.magnific-popup.min - lightbox for photos.
-jquery.ripples-min - water effect ripples.
-owl.carousel.min - carousel slider with photos.
-typed.min - Typed.js is a library that types.
+I used tools: <br />
+jquery.magnific-popup.min - lightbox for photos.<br />
+jquery.ripples-min - water effect ripples.<br />
+owl.carousel.min - carousel slider with photos.<br />
+typed.min - Typed.js is a library that types.<br />
 
-Animation:
--GreenSock
--wow.js
+Animation:<br />
+-GreenSock<br />
+-wow.js<br />
